@@ -1,0 +1,4 @@
+--write-annotations
+--write-info-json
+--write-description
+-o /Users/<your user here>/video/youtube/%(channel)s/%(title)s-%(id)s.%(ext)s
