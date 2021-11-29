@@ -11,8 +11,8 @@ def downloadVideos(codes):
     print("starting downloads\n\n")
 
   for i, code in enumerate(codes):
-    os.system("osascript -e 'tell application \"Terminal\" to do script \"youtube-dl " + code + "\"'")
-    print("downloading " + code)
+    os.system("osascript -e 'tell application \"Terminal\" to do script \"youtube-dl https://www.youtube.com/watch?v=" + code + "\"'")
+    print("(" + str(i+1) + "/" + str(len(codes)) + ") downloading " + code)
     if (i % 5 == 4 and i+1 != len(codes)): # load 5 videos and then wait to avoid youtube complaining
       pause()
 
